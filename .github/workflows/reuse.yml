@@ -1,0 +1,30 @@
+# SPDX-FileCopyrightText: 2023 aas-core3.0-csharp AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+name: REUSE
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Check-REUSE-compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install reuse
+        run: pip install reuse==6.3.0
+
+      - name: Check REUSE compliance
+        run: reuse lint

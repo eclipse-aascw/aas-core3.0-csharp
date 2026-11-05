@@ -1,0 +1,58 @@
+# SPDX-FileCopyrightText: 2023 aas-core3.0-csharp AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+version = 1
+
+# Prose and metadata where a header would end up in the rendered output
+# (e.g., README shown on GitHub and NuGet, the documentation), or which can
+# not carry a comment (JSON, images).
+[[annotations]]
+path = [
+    "AUTHORS",
+    "README.md",
+    "doc/**/*.md",
+    "doc/source/docfx.json",
+    "doc/source/images/**",
+    "src/.config/dotnet-tools.json",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-core3.0-csharp AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# IDE settings and the solution file are written by Rider, ReSharper and
+# Visual Studio, which would drop or misplace a header.
+[[annotations]]
+path = [
+    ".idea/**",
+    "src/.idea/**",
+    "src/aas-core3.0-csharp.sln",
+    "src/*.sln.DotSettings.user",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-core3.0-csharp AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# A plain word list, one entry per line, so a header would be read as words.
+[[annotations]]
+path = "src/AdditionalVerbsInImperativeMood.txt"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-core3.0-csharp AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# The snippets are inserted verbatim into the generated code by aas-core-codegen,
+# so they must not carry a header of their own.
+[[annotations]]
+path = "dev_scripts/codegen/snippets/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-core3.0-csharp AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# Test data and the recorded test outputs are generated and compared
+# byte-by-byte, and JSON can not carry a comment. The update script reads
+# the testgen revision file as-is.
+[[annotations]]
+path = ["test_data/**", "src/AasCore.Aas3_0.Tests/testgen_rev.txt"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-core3.0-csharp AUTHORS"
+SPDX-License-Identifier = "MIT"

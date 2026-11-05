@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2024 aas-core-meta AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 # Downloaded from: https://raw.githubusercontent.com/aas-core-works/aas-core-meta/11b116c5231d24dade11330ef127307f99a0e671/aas_core_meta/v3.py
 """
 Provide an implementation of the Asset Administration Shell (AAS) V3.0.
