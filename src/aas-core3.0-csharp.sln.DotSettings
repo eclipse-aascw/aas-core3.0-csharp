@@ -1,4 +1,10 @@
-﻿<!-- Handcrafted preferences for ReSharper -->
+﻿<!--
+SPDX-FileCopyrightText: 2023 aas-core3.0-csharp AUTHORS
+
+SPDX-License-Identifier: MIT
+-->
+
+<!-- Handcrafted preferences for ReSharper -->
 <!-- see for reference: https://github.com/JetBrains/resharper-ultimate-whatsnew/blob/master/Inspections.DotSettings -->
 <!-- In Issue names quote "." -> "_002E" -->
 <wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">

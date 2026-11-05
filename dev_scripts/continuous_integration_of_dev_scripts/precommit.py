@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# SPDX-FileCopyrightText: 2023 aas-core3.0-csharp AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Run pre-commit checks on the repository."""
 
 import argparse

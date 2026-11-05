@@ -1,4 +1,8 @@
-﻿using Aas = AasCore.Aas3_0; // renamed
+﻿// SPDX-FileCopyrightText: 2023 aas-core3.0-csharp AUTHORS
+//
+// SPDX-License-Identifier: MIT
+
+using Aas = AasCore.Aas3_0; // renamed
 
 using NUnit.Framework; // can't alias
 
