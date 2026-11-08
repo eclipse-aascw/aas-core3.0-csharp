@@ -56,3 +56,18 @@ path = ["test_data/**", "src/AasCore.Aas3_0.Tests/testgen_rev.txt"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2023 aas-core3.0-csharp AUTHORS"
 SPDX-License-Identifier = "MIT"
+
+# The meta-model and the code generated from it transcribe the AAS
+# specification: the docstrings and the doc comments derived from them quote
+# the definitions of the classes, attributes and constraints. That text keeps
+# the license of the specification, next to the MIT license of our own code.
+# The specifications published by IDTA are licensed under CC BY 4.0.
+[[annotations]]
+path = [
+    "dev_scripts/codegen/meta_model.py",
+    "src/AasCore.Aas3_0/types.cs",
+    "src/AasCore.Aas3_0/verification.cs",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Industrial Digital Twin Association e. V."
+SPDX-License-Identifier = "CC-BY-4.0"
